@@ -19,5 +19,5 @@ for (let index = 0; index < 2000; index++) {
         var contentTag = `<dialog class="dialog ${contentClass}" style="Top:${t}px; Left: ${l}px;" open><p>${contents[index]}</p><form method="dialog"><button>NHỚ</button></form></dialog>`;
         body.innerHTML += contentTag;
 
-    }, Math.random() * 2000);
+    }, Math.random() * 10000);
 }
