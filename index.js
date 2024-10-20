@@ -8,10 +8,9 @@ var contents = [
     'Mọi thứ thuận lợi', 
     'Chúc ẻ bình an!', 
     'Chúc ẻ thuận lợi!', 
-    'Tối em đi chơi ở đâu chưa??', 
     '6868 mãi đỉnh mãi đỉnh']
 var c = contents.length - 1;
-for (let index = 0; index < 5000; index++) {
+for (let index = 0; index < 2000; index++) {
     setTimeout(() => {
         var contentClass = `dialog${index}`; 
         var t = Math.random() * height;
@@ -20,5 +19,5 @@ for (let index = 0; index < 5000; index++) {
         var contentTag = `<dialog class="dialog ${contentClass}" style="Top:${t}px; Left: ${l}px;" open><p>${contents[index]}</p><form method="dialog"><button>NHỚ</button></form></dialog>`;
         body.innerHTML += contentTag;
 
-    }, Math.random() * 1000);
+    }, Math.random() * 2000);
 }
